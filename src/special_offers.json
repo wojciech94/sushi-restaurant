@@ -1,32 +1,58 @@
 [
 	{
-		"title": "Students Monday",
+		"id": 1,
+		"title": "Wege Monday",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus quaerat error aut, magni ipsum rem dignissimos voluptates voluptatibus similique.",
-		"place": "Where: In restaurant after presenting your ID card"
+		"place": "Where: Restaurant and delivery",
+		"path": "sushi",
+		"day": "Monday"
 	},
 	{
-		"title": "Thuesday",
+		"id": 2,
+		"title": "Family Thuesday",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus quaerat error aut, magni ipsum rem dignissimos voluptates voluptatibus similique.",
-		"place": "Where: In restaurant after presenting your ID card"
+		"place": "Where: In restaurant",
+		"path": "sushihome",
+		"day": "Tuesday"
 	},
 	{
-		"title": "Thuesday",
+		"id": 3,
+		"title": "Single Wednesday",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus quaerat error aut, magni ipsum rem dignissimos voluptates voluptatibus similique.",
-		"place": "Where: In restaurant after presenting your ID card"
+		"place": "Where: Restaurant and delivery",
+		"path": "sushirestaurant",
+		"day": "Wednesday"
 	},
 	{
-		"title": "Thuesday",
+		"id": 4,
+		"title": "Student Thurstday",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus quaerat error aut, magni ipsum rem dignissimos voluptates voluptatibus similique.",
-		"place": "Where: In restaurant after presenting your ID card"
+		"place": "Where: In restaurant after presenting your ID card",
+		"path": "sushirestaurant",
+		"day": "Thursday"
 	},
 	{
-		"title": "Thuesday",
+		"id": 5,
+		"title": "Party Friday",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus quaerat error aut, magni ipsum rem dignissimos voluptates voluptatibus similique.",
-		"place": "Where: In restaurant after presenting your ID card"
+		"place": "Where: Restaurant and delivery (for pucharses above 100)",
+		"path": "sushihome",
+		"day": "Friday"
 	},
 	{
-		"title": "Thuesday",
+		"id": 6,
+		"title": "Lovers Saturday",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus quaerat error aut, magni ipsum rem dignissimos voluptates voluptatibus similique.",
-		"place": "Where: In restaurant after presenting your ID card"
+		"place": "Where: In restaurant for couples",
+		"path": "sushi",
+		"day": "Saturday"
+	},
+	{
+		"id": 7,
+		"title": "Senior Sunday",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus quaerat error aut, magni ipsum rem dignissimos voluptates voluptatibus similique.",
+		"place": "Where: In restaurant after presenting your ID card",
+		"path": "sushihome",
+		"day": "Sunday"
 	}
 ]

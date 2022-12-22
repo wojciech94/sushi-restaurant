@@ -15,7 +15,6 @@ function HeroShadow() {
 function Hero({ hero }) {
 	return (
 		<div className='hero'>
-			{console.log(hero.name)}
 			<HeroImg name={hero.name} />
 			{hero.shadow === true ? <HeroShadow /> : <></>}
 			<HeroText text={hero.text} />
