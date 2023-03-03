@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import Nav from './components/Nav'
+import App from './components/home/App'
+import Nav from './components/nav/Nav'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Special from './components/Special'
 import Contact from './components/Contact'
@@ -38,7 +38,7 @@ function Routing() {
 				<CtxProvider value={{ day: day }}>
 					<Nav />
 					<Routes>
-						<Route path='/' element={<App />} />
+						<Route path='/' element={<App scrollTop={scrlHeight} />} />
 						<Route path='/home' element={<App />} />
 						<Route path='/special' element={<Special />} />
 						<Route path='/restaurant' element={<Restaurant />} />
