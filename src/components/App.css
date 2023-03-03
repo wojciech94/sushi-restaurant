@@ -9,7 +9,7 @@
 }
 
 html {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	font-family: 'Open Sans', 'Courier New', monospace;
 	scroll-behavior: smooth;
 }
 
@@ -21,11 +21,13 @@ body {
 
 .App {
 	position: relative;
-	text-align: center;
 }
 
 .App-link {
 	color: #61dafb;
+}
+
+.nav-container {
 }
 
 .nav {
@@ -36,7 +38,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	background-color: #b32a2aee;
+	background-color: #b32a2a;
 	width: 50%;
 	min-width: 220px;
 	height: 100%;
@@ -99,7 +101,7 @@ body {
 
 .icon-up {
 	display: inline-block;
-	background-image: url('../public/img/icons/arrow-up.svg');
+	background-image: url('../../public/img/icons/arrow-up.svg');
 	background-size: cover;
 	background-position: center;
 	width: 100%;
@@ -108,7 +110,6 @@ body {
 
 .hero {
 	position: relative;
-	margin: 4rem auto;
 	width: 100%;
 	height: 400px;
 	background-color: #eee;
@@ -116,33 +117,65 @@ body {
 }
 
 .hero-img {
+	position: fixed;
 	top: 0;
 	left: 0;
-	position: fixed;
 	width: 100%;
-	height: 800px;
+	height: 100%;
 	object-fit: cover;
+	z-index: -10;
 }
 
 .hero-text {
 	position: absolute;
 	margin: 0;
-	top: calc(200px - 2rem);
+	top: 33%;
 	font-size: 4rem;
 	font-weight: bold;
 	text-align: center;
-	color: #aaa;
+	color: #ccc;
 	text-shadow: black 4px 4px 4px;
 	width: 100%;
 }
 
 .hero-shadow {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.7);
 	width: 100%;
-	height: 800px;
+	height: 100%;
+}
+
+.call-to-action-wrapper {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	translate: -50%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	color: #ccc;
+}
+
+.call-to-action-paragraph {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.call-to-action-btn {
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	transition: background-color 0.3s, color 0.3s;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.call-to-action-btn:hover {
+	background-color: #b32a2a;
+	color: #ddd;
+	cursor: pointer;
 }
 
 .special__wrapper {
@@ -211,7 +244,7 @@ body {
 	width: 100%;
 	height: 300px;
 	bottom: 0;
-	background-color: #aaa;
+	background-color: #ccc;
 }
 
 @media (min-width: 992px) {
@@ -238,26 +271,7 @@ body {
 		display: none;
 	}
 
-	.hero-img {
-		top: var(--nav-height);
-	}
-
-	.hero-shadow {
-		top: var(--nav-height);
-	}
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
+	.nav-container {
+		height: var(--nav-height);
 	}
 }
