@@ -6,6 +6,7 @@
 
 :root {
 	--nav-height: 100px;
+	--wrapper-width: 1400px;
 }
 
 html {
@@ -25,9 +26,6 @@ body {
 
 .App-link {
 	color: #61dafb;
-}
-
-.nav-container {
 }
 
 .nav {
@@ -99,9 +97,31 @@ body {
 	cursor: pointer;
 }
 
+.text-end {
+	text-align: end;
+}
+
 .icon-up {
 	display: inline-block;
 	background-image: url('../../public/img/icons/arrow-up.svg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.icon-star {
+	display: inline-block;
+	background-image: url('../../public/img/icons/star.svg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.icon-star--empty {
+	display: inline-block;
+	background-image: url('../../public/img/icons/star-empty.svg');
 	background-size: cover;
 	background-position: center;
 	width: 100%;
@@ -239,6 +259,143 @@ body {
 	height: 256px;
 }
 
+.carousel {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 0;
+	background: #eee;
+}
+
+.carousel-wrapper {
+	position: relative;
+	max-width: var(--wrapper-width);
+	padding: 2rem 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+}
+
+.carousel-container {
+	display: block;
+	position: relative;
+	margin: 50px 100px;
+	overflow: hidden;
+}
+
+.carousel-button {
+	position: absolute;
+	top: 50%;
+	width: 80px;
+	min-width: 80px;
+	height: 80px;
+	cursor: pointer;
+	background-color: #888;
+}
+
+.carousel-button--prev {
+	left: 20px;
+}
+
+.carousel-button--next {
+	right: 20px;
+}
+
+.carousel-title {
+	position: relative;
+	font-size: 2rem;
+	padding: 0.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: #323232;
+}
+
+.carousel-title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	translate: -50% 0;
+	background-color: #b32;
+	width: 100px;
+	height: 2px;
+}
+
+.carousel-item {
+	position: relative;
+	margin: 0 20px;
+	padding: 1.5rem;
+	min-width: calc(100% - 40px);
+	width: calc(100% - 40px);
+	min-height: 300px;
+	border: 3px solid #a56868;
+	border-radius: 16px;
+}
+
+.items-container {
+	position: relative;
+	width: 100%;
+	display: inline-flex;
+	align-items: start;
+	transition: transform 0.5s;
+}
+
+.item-image {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 10px;
+	top: 10px;
+	background-color: #eee;
+	border: 3px solid #b32a2a;
+	border-radius: 50%;
+}
+
+.item-name {
+	margin: auto 1rem 0.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #b32a2a;
+}
+
+.item-title {
+	margin: 0 0.5rem;
+	font-weight: bold;
+	color: #888;
+}
+
+.item-text {
+	margin: auto 2rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.item-star {
+	width: 32px;
+	height: 32px;
+}
+
+.item-footer {
+	position: absolute;
+	display: flex;
+	gap: 0.2rem;
+	padding: 0.5rem;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+}
+
+.item-footer::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #323232;
+}
+
 .footer-container {
 	position: relative;
 	width: 100%;
@@ -273,5 +430,10 @@ body {
 
 	.nav-container {
 		height: var(--nav-height);
+	}
+
+	.carousel-item {
+		min-width: calc(50% - 40px);
+		width: calc(50% - 40px);
 	}
 }

@@ -1,0 +1,40 @@
+import React, { useState } from 'react'
+import Recomendations from '../recomendations.json'
+
+function Carousel() {
+	const [activeId, setActiveId] = useState(0)
+	const items = document.documentElement.clientWidth > 992 ? Recomendations.length / 2 : Recomendations.length
+
+	const handlePrevId = () => {
+		setActiveId(activeId <= 0 ? items - 1 : (activeId - 1) % items)
+	}
+
+	const handleNextId = () => {
+		setActiveId((activeId + 1) % items)
+	}
+
+	return (
+		<div className='carousel'>
+			<div className='carousel-wrapper'>
+				<div className='carousel-title'>Recomendations</div>
+				<div className='carousel-container'>
+					<div className='items-container' style={{ transform: `translateX(-${activeId * 100}%)` }}>
+						{Recomendations.map(recomendation => {
+							return (
+								<div key={recomendation.id} className={'carousel-item'}>
+									{recomendation.text !== '' && <div className='item-text'>{recomendation.text}</div>}
+									{recomendation.author !== '' && <div className='item-name'>{recomendation.author}</div>}
+									{recomendation.title !== '' && <div className='item-title'>{recomendation.title}</div>}
+								</div>
+							)
+						})}
+					</div>
+				</div>
+				<div className='carousel-button carousel-button--prev' onClick={handlePrevId}></div>
+				<div className='carousel-button carousel-button--next' onClick={handleNextId}></div>
+			</div>
+		</div>
+	)
+}
+
+export default Carousel

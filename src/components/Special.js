@@ -30,20 +30,16 @@ function Special() {
 	}
 
 	return (
-		<CtxConsumer>
-			{context => (
-				<>
-					<Hero hero={heroData} />
-					<div className='special__wrapper'>
-						<div className='special__container'>
-							{Offers.map(offer => {
-								return <SpecialCard key={offer.id} special={offer}></SpecialCard>
-							})}
-						</div>
-					</div>
-				</>
-			)}
-		</CtxConsumer>
+		<>
+			<Hero hero={heroData} />
+			<div className='special__wrapper'>
+				<div className='special__container'>
+					{Offers.map(offer => {
+						return <SpecialCard key={offer.id} special={offer}></SpecialCard>
+					})}
+				</div>
+			</div>
+		</>
 	)
 }
 

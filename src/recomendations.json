@@ -1,0 +1,38 @@
+[
+	{
+		"id": 0,
+		"author": "Adam",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare vitae velit ac vestibulum. Fusce dui nulla, hendrerit condimentum velit vel, accumsan vestibulum sapien. Donec a nisi ante.",
+		"title": ""
+	},
+	{
+		"id": 1,
+		"author": "Dominik",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare vitae velit ac vestibulum. Fusce dui nulla, hendrerit condimentum velit vel, accumsan vestibulum sapien. Donec a nisi ante.",
+		"title": ""
+	},
+	{
+		"id": 2,
+		"author": "Agnieszka",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare vitae velit ac vestibulum. Fusce dui nulla, hendrerit condimentum velit vel, accumsan vestibulum sapien. Donec a nisi ante.",
+		"title": ""
+	},
+	{
+		"id": 3,
+		"author": "Piotr",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare vitae velit ac vestibulum. Fusce dui nulla, hendrerit condimentum velit vel, accumsan vestibulum sapien. Donec a nisi ante.",
+		"title": ""
+	},
+	{
+		"id": 4,
+		"author": "Marzena",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare vitae velit ac vestibulum. Fusce dui nulla, hendrerit condimentum velit vel, accumsan vestibulum sapien. Donec a nisi ante.",
+		"title": ""
+	},
+	{
+		"id": 5,
+		"author": "Kuba",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare vitae velit ac vestibulum. Fusce dui nulla, hendrerit condimentum velit vel, accumsan vestibulum sapien. Donec a nisi ante.",
+		"title": ""
+	}
+]

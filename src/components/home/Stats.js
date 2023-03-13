@@ -20,11 +20,9 @@ function Stats({ scrollTop }) {
 			},
 		})
 			.then(function (response) {
-				console.log(response)
 				return response.json()
 			})
 			.then(function (myData) {
-				console.log(myData)
 				setStatsData(myData)
 			})
 	}
