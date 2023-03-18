@@ -1,5 +1,4 @@
 import React from 'react'
-import '../home/homeStyle.css'
 
 const AboutUs = () => {
 	return (

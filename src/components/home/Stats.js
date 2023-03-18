@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import '../home/homeStyle.css'
 
 function Stats({ scrollTop }) {
 	const [statsItem, setStatsItem] = useState(0)
@@ -66,22 +65,24 @@ function Stats({ scrollTop }) {
 
 	return (
 		<div className='stats'>
-			<div className='wrapper stats-container'>
-				<div className='stats-item'>
-					<span className='stats-value'>{yearsVal}</span>
-					<span className='stats-text'>Lat na rynku</span>
-				</div>
-				<div className='stats-item'>
-					<span className='stats-value'>{scoreVal}</span>
-					<span className='stats-text'>Ocena na google</span>
-				</div>
-				<div className='stats-item'>
-					<span className='stats-value'>{ordersVal}</span>
-					<span className='stats-text'>Dostaw</span>
-				</div>
-				<div className='stats-item'>
-					<span className='stats-value'>{clientsVal}</span>
-					<span className='stats-text'>Klientów w restauracji</span>
+			<div className='stats-wrapper'>
+				<div className='stats-container'>
+					<div className='stats-item'>
+						<span className='stats-value'>{yearsVal}</span>
+						<span className='stats-text'>Lat na rynku</span>
+					</div>
+					<div className='stats-item'>
+						<span className='stats-value'>{scoreVal}</span>
+						<span className='stats-text'>Ocena na google</span>
+					</div>
+					<div className='stats-item'>
+						<span className='stats-value'>{ordersVal}</span>
+						<span className='stats-text'>Dostaw</span>
+					</div>
+					<div className='stats-item'>
+						<span className='stats-value'>{clientsVal}</span>
+						<span className='stats-text'>Klientów w restauracji</span>
+					</div>
 				</div>
 			</div>
 		</div>

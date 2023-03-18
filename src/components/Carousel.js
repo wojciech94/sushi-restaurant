@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Recomendations from '../recomendations.json'
+import { ArrowLeft, ArrowRight } from 'react-feather'
 
 function Carousel() {
 	const [activeId, setActiveId] = useState(0)
@@ -30,8 +31,12 @@ function Carousel() {
 						})}
 					</div>
 				</div>
-				<div className='carousel-button carousel-button--prev' onClick={handlePrevId}></div>
-				<div className='carousel-button carousel-button--next' onClick={handleNextId}></div>
+				<button className='button button--prev' onClick={handlePrevId}>
+					<ArrowLeft height={64} width={64}></ArrowLeft>
+				</button>
+				<button className='button button--next' onClick={handleNextId}>
+					<ArrowRight height={64} width={64}></ArrowRight>
+				</button>
 			</div>
 		</div>
 	)
