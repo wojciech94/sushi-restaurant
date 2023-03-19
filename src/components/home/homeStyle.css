@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+body:has(.gallery-full) {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
 .about-us {
 	position: relative;
 	display: flex;
@@ -78,7 +85,7 @@
 	width: 110%;
 	left: -5%;
 	height: 100%;
-	background-color: #363232;
+	background-image: url('../../../public/img/bg-concrete-lg.jpg');
 	z-index: -1;
 	transform: rotateZ(-2deg);
 }
@@ -127,8 +134,10 @@
 
 .gallery {
 	position: relative;
+}
+
+.gallery:has(.gallery-full) {
 	z-index: 20;
-	min-height: 300px;
 }
 
 .gallery-full {
@@ -141,21 +150,35 @@
 	z-index: 100000000;
 }
 
+.gallery-full-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
 .gallery-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 2rem;
 	gap: 2rem;
+	padding: 2rem;
+	background-image: url('../../../public/img/bg-concrete-lg.jpg');
+}
+
+.gallery-title {
+	position: absolute;
+	top: 0;
+	padding: 0.5rem;
+	color: #fefefe;
 }
 
 .gallery-image {
 	position: relative;
 	width: 300px;
 	height: 300px;
-	border: 2px solid #222;
-	border-radius: 16px;
 	overflow: hidden;
 }
 
@@ -167,6 +190,10 @@
 .image {
 	width: 100%;
 	height: 100%;
+}
+
+.image-border {
+	border: 4px solid #fefefe;
 }
 
 .gallery-image svg {

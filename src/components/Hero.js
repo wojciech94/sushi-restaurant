@@ -22,9 +22,9 @@ function Hero({ hero }) {
 	return (
 		<div className='hero'>
 			<HeroImg name={hero.name} />
-			{hero.shadow === true ? <HeroShadow /> : <></>}
+			{hero.shadow === true && <HeroShadow />}
 			<HeroText text={hero.text} />
-			{hero.useAction === true ? <CallToAction action={GoToMenu} /> : <></>}
+			{hero.useAction === true && <CallToAction action={GoToMenu} />}
 		</div>
 	)
 }

@@ -31,10 +31,10 @@ function Carousel() {
 						})}
 					</div>
 				</div>
-				<button className='button button--prev' onClick={handlePrevId}>
+				<button className='button button-hover-gray button--prev' onClick={handlePrevId}>
 					<ArrowLeft height={64} width={64}></ArrowLeft>
 				</button>
-				<button className='button button--next' onClick={handleNextId}>
+				<button className='button button-hover-gray button--next' onClick={handleNextId}>
 					<ArrowRight height={64} width={64}></ArrowRight>
 				</button>
 			</div>

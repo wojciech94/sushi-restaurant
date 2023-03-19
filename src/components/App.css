@@ -330,6 +330,10 @@ body {
 	color: #fefefe;
 }
 
+.button-hover-gray:hover {
+	color: #666;
+}
+
 .button--light {
 	color: #aaa;
 }

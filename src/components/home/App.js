@@ -5,14 +5,20 @@ import Stats from './Stats'
 import Carousel from '../Carousel'
 import Gallery from './Gallery'
 import '../home/homeStyle.css'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 function App({ scrollTop }) {
 	const [fullMode, setFullMode] = useState(false)
+	let offset = useRef()
 
 	const handleFullMode = state => {
 		setFullMode(state)
+		state === true && (offset.current = window.scrollY)
 	}
+
+	useEffect(() => {
+		window.scrollTo(0, offset.current)
+	}, [fullMode])
 
 	const heroData = {
 		shadow: true,
