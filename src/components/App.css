@@ -86,7 +86,6 @@ body {
 
 .nav__link {
 	padding: 4px 8px;
-	width: 100%;
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #e7a8a8;
@@ -109,6 +108,20 @@ body {
 
 .nav__link:visited:hover {
 	color: #e92626;
+}
+
+.nav__logo {
+	background-image: url('../../public/logo192.png');
+	background-size: cover;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 96px;
+	height: 96px;
+}
+
+.nav__logo:hover {
+	cursor: pointer;
 }
 
 .back-to-top-btn {
@@ -455,7 +468,7 @@ body {
 	background-color: #ccc;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	.nav {
 		top: 0;
 		left: 0;
@@ -473,6 +486,11 @@ body {
 	.nav__link {
 		padding: 6px 12px;
 		font-size: 1.5rem;
+	}
+
+	.nav__logo {
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 
 	.nav__burger {

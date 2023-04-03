@@ -65,23 +65,24 @@ function Stats({ scrollTop }) {
 
 	return (
 		<div className='stats'>
-			<div className='stats-wrapper'>
-				<div className='stats-container'>
-					<div className='stats-item'>
-						<span className='stats-value'>{yearsVal}</span>
-						<span className='stats-text'>Lat na rynku</span>
+			<div className='stats__wrapper'>
+				<div className='stats__heading'>Statystyki</div>
+				<div className='stats__container'>
+					<div className='stats__item'>
+						<span className='stats__value'>{yearsVal}</span>
+						<span className='stats__text'>Lat na rynku</span>
 					</div>
-					<div className='stats-item'>
-						<span className='stats-value'>{scoreVal}</span>
-						<span className='stats-text'>Ocena na google</span>
+					<div className='stats__item'>
+						<span className='stats__value'>{scoreVal}</span>
+						<span className='stats__text'>Ocena na google</span>
 					</div>
-					<div className='stats-item'>
-						<span className='stats-value'>{ordersVal}</span>
-						<span className='stats-text'>Dostaw</span>
+					<div className='stats__item'>
+						<span className='stats__value'>{ordersVal}</span>
+						<span className='stats__text'>Dostaw</span>
 					</div>
-					<div className='stats-item'>
-						<span className='stats-value'>{clientsVal}</span>
-						<span className='stats-text'>Klientów w restauracji</span>
+					<div className='stats__item'>
+						<span className='stats__value'>{clientsVal}</span>
+						<span className='stats__text'>Klientów w restauracji</span>
 					</div>
 				</div>
 			</div>

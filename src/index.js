@@ -5,8 +5,7 @@ import Nav from './components/nav/Nav'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Special from './components/Special'
 import Contact from './components/Contact'
-import Restaurant from './components/Restaurant'
-import Reservation from './components/Reservation'
+import Events from './components/Events'
 import Footer from './components/Footer'
 import BackToTopBtn from './components/BackToTopBtn'
 
@@ -40,9 +39,8 @@ function Routing() {
 					<Routes>
 						<Route path='/' element={<App scrollTop={scrlHeight} />} />
 						<Route path='/home' element={<App />} />
-						<Route path='/special' element={<Special />} />
-						<Route path='/restaurant' element={<Restaurant />} />
-						<Route path='/reservation' element={<Reservation />} />
+						<Route path='/menu' element={<Special />} />
+						<Route path='/events' element={<Events />} />
 						<Route path='/contact' element={<Contact />} />
 					</Routes>
 					<BackToTopBtn handleClick={() => handleBackTop()} scrollHeight={scrlHeight}></BackToTopBtn>

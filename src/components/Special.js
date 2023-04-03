@@ -43,4 +43,8 @@ function Special() {
 	)
 }
 
-export default Special
+function Menu() {
+	return <Special />
+}
+
+export default Menu
