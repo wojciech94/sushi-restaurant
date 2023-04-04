@@ -1,4 +1,5 @@
 import '../App.css'
+import '../Utils.css'
 import Hero from '../Hero'
 import AboutUs from './AboutUs'
 import Stats from './Stats'

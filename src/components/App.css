@@ -20,27 +20,6 @@ body {
 	min-height: 100vh;
 }
 
-.d-flex {
-	display: flex;
-}
-
-.flex-center {
-	justify-content: center;
-	align-items: center;
-}
-
-.flex-wrap {
-	flex-wrap: wrap;
-}
-
-.justify-center {
-	justify-content: center;
-}
-
-.align-center {
-	align-items: center;
-}
-
 .bg-hover-shadow:hover {
 	background-color: #00000088;
 }
@@ -133,10 +112,6 @@ body {
 	border-radius: 50%;
 	z-index: 100;
 	cursor: pointer;
-}
-
-.text-end {
-	text-align: end;
 }
 
 .icon-up {
@@ -460,11 +435,9 @@ body {
 	background-color: #323232;
 }
 
-.footer-container {
+.footer__container {
 	position: relative;
 	width: 100%;
-	height: 300px;
-	bottom: 0;
 	background-color: #ccc;
 }
 

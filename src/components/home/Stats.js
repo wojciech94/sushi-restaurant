@@ -64,25 +64,25 @@ function Stats({ scrollTop }) {
 	}
 
 	return (
-		<div className='stats'>
+		<div id='stats' className='stats'>
 			<div className='stats__wrapper'>
-				<div className='stats__heading'>Statystyki</div>
+				<div className='stats__heading'>Stats</div>
 				<div className='stats__container'>
 					<div className='stats__item'>
 						<span className='stats__value'>{yearsVal}</span>
-						<span className='stats__text'>Lat na rynku</span>
+						<span className='stats__text'>Years of experience</span>
 					</div>
 					<div className='stats__item'>
 						<span className='stats__value'>{scoreVal}</span>
-						<span className='stats__text'>Ocena na google</span>
+						<span className='stats__text'>Score on google</span>
 					</div>
 					<div className='stats__item'>
 						<span className='stats__value'>{ordersVal}</span>
-						<span className='stats__text'>Dostaw</span>
+						<span className='stats__text'>Deliveries</span>
 					</div>
 					<div className='stats__item'>
 						<span className='stats__value'>{clientsVal}</span>
-						<span className='stats__text'>Klientów w restauracji</span>
+						<span className='stats__text'>Clients in restaurant</span>
 					</div>
 				</div>
 			</div>
