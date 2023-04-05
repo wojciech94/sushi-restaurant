@@ -32,8 +32,9 @@ function Special() {
 	return (
 		<>
 			<Hero hero={heroData} />
-			<div className='special__wrapper'>
-				<div className='special__container'>
+			<div className='special__wrapper p-8'>
+				<div id="specials" className='heading heading--lg heading__underline text-center'>Special Offers</div>
+				<div id='specials' className='special__container'>
 					{Offers.map(offer => {
 						return <SpecialCard key={offer.id} special={offer}></SpecialCard>
 					})}

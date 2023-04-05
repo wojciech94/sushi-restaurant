@@ -64,7 +64,7 @@ body:has(.gallery-full) {
 
 .heading {
 	position: relative;
-	margin: 0.6rem 0;
+	margin: 0.75rem 0;
 	font-size: 1rem;
 	font-weight: bold;
 	color: #4e4e4e;
@@ -86,13 +86,13 @@ body:has(.gallery-full) {
 }
 
 .heading--lg {
-	margin: 0.8rem 0;
+	margin: 1rem 0;
 	font-size: 2rem;
 	font-weight: bold;
 }
 
 .heading--xl {
-	margin: 1rem 0;
+	margin: 1.25rem 0;
 	font-size: 3rem;
 	font-weight: bold;
 }
