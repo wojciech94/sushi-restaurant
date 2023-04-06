@@ -435,6 +435,35 @@ body {
 	background-color: #323232;
 }
 
+.menu__container {
+	position: relative;
+	z-index: 10;
+}
+
+.menu__card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 160px;
+	height: 160px;
+	border-radius: 20%;
+	overflow: hidden;
+}
+
+.menu__title {
+	position: absolute;
+	top: 65%;
+	color: #fefefe;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+.menu__img {
+	background-position: center;
+	background-size: contain;
+}
+
 .footer__container {
 	position: relative;
 	width: 100%;

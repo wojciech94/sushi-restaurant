@@ -1,5 +1,5 @@
-import '../App.css'
 import '../Utils.css'
+import '../App.css'
 import Hero from '../Hero'
 import AboutUs from './AboutUs'
 import Stats from './Stats'
