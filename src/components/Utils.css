@@ -1,3 +1,7 @@
+.w-50 {
+	width: 50%;
+}
+
 .w-100 {
 	width: 100%;
 }
@@ -237,6 +241,10 @@
 	gap: 1rem;
 }
 
+.fw-bold {
+	font-weight: bold;
+}
+
 .bg-white {
 	background-color: #fff;
 }
@@ -280,6 +288,10 @@
 
 .justify-evenly {
 	justify-content: space-evenly;
+}
+
+.justify-between {
+	justify-content: space-between;
 }
 
 .align-center {

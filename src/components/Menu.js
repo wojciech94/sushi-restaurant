@@ -1,34 +1,67 @@
 import Hero from './Hero'
 import Offers from '../special_offers.json'
 import { CtxConsumer } from '..'
+import { useState } from 'react'
 
-function MenuCard({ cardData }) {
+function MenuCard({ cardData, activeId, setActiveTab }) {
 	return (
-		<div className='col-12 col-md-4 col-xl-2'>
-			<div className='menu__card my-4 mx-auto'>
-				<img className='menu__img' src={process.env.PUBLIC_URL + cardData.path} height={'100%'}></img>
-				<div className='menu__title'>{cardData.name}</div>
-			</div>
+		<div
+			onClick={() => {
+				setActiveTab(cardData.id)
+			}}
+			className={cardData.id === activeId ? 'menu__title active' : 'menu__title'}>
+			{cardData.name}
 		</div>
 	)
 }
 
 function MenuSection() {
+	const [activeId, setActiveId] = useState(0)
+	const setActiveTab = id => {
+		setActiveId(id)
+	}
+
 	const cards = [
-		{ name: 'Snacks', path: '/img/sushi.jpg' },
-		{ name: 'Maki', path: '/img/sushi.jpg' },
-		{ name: 'Futomaki', path: '/img/sushi.jpg' },
-		{ name: 'Uramaki', path: '/img/sushi.jpg' },
-		{ name: 'Nigiri', path: '/img/sushi.jpg' },
-		{ name: 'Sets', path: '/img/sushi.jpg' },
+		{ name: 'Snacks', id: 0 },
+		{ name: 'Maki', id: 1 },
+		{ name: 'Futomaki', id: 2 },
+		{ name: 'Uramaki', id: 3 },
+		{ name: 'Nigiri', id: 4 },
+		{ name: 'Sets', id: 5 },
+	]
+
+	const snacks = [
+		{ name: 'snack1', cost: 4, ingredients: 'abcsdfs asdfsdf' },
+		{ name: 'snack2', cost: 4.5, ingredients: 'babcsdfs asdfsdf' },
+		{ name: 'snack3', cost: 5, ingredients: 'cabcsdfs asdfsdf' },
+		{ name: 'snack4', cost: 5, ingredients: 'dabcsdfs asdfsdf' },
+		{ name: 'snack5', cost: 6, ingredients: 'eabcsdfs asdfsdf' },
+		{ name: 'snack6', cost: 8, ingredients: 'fabcsdfs asdfsdf' },
 	]
 
 	return (
 		<div className='menu__container'>
-			<div className='d-flex flex-wrap'>
+			<div className='heading heading--lg heading__underline text-center'>Menu</div>
+			<div className='menu__header'>
 				{cards.map(card => {
-					return <MenuCard cardData={card} />
+					return <MenuCard cardData={card} activeId={activeId} setActiveTab={setActiveTab} />
 				})}
+			</div>
+			<div className='menu__content'>
+				<div className='d-flex flex-wrap'>
+					{activeId === 0 &&
+						snacks.map(snack => {
+							return (
+								<div className='d-flex flex-column w-50 p-8'>
+									<div className='fw-bold d-flex justify-between'>
+										<span>{snack.name}</span>
+										<span>{snack.cost}$</span>
+									</div>
+									<div>{snack.ingredients}</div>
+								</div>
+							)
+						})}
+				</div>
 			</div>
 		</div>
 	)

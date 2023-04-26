@@ -438,30 +438,39 @@ body {
 .menu__container {
 	position: relative;
 	z-index: 10;
+	padding: 2rem 0;
+	background-color: #eee;
+}
+
+.menu__header {
+	display: flex;
+	padding: 1rem 2rem;
+	gap: 16px;
+	background: #fff;
 }
 
 .menu__card {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 160px;
-	height: 160px;
-	border-radius: 20%;
-	overflow: hidden;
 }
 
 .menu__title {
-	position: absolute;
-	top: 65%;
-	color: #fefefe;
+	font-size: 1.8rem;
+	transition: color 0.3s, border-bottom 0.3s;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
 	font-weight: bold;
-	font-size: 1.6rem;
 }
 
-.menu__img {
-	background-position: center;
-	background-size: contain;
+.menu__title.active {
+	border-bottom: 2px solid black;
+}
+
+.menu__title:hover {
+	color: #61dafb;
+	cursor: pointer;
+}
+
+.menu__title.active:hover {
+	border-bottom: 2px solid #61dafb;
 }
 
 .footer__container {
