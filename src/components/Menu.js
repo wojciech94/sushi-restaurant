@@ -31,33 +31,33 @@ function MenuSection() {
 	]
 
 	const snacks = [
-		{ name: 'snack1', cost: 4, ingredients: 'abcsdfs asdfsdf' },
-		{ name: 'snack2', cost: 4.5, ingredients: 'babcsdfs asdfsdf' },
-		{ name: 'snack3', cost: 5, ingredients: 'cabcsdfs asdfsdf' },
-		{ name: 'snack4', cost: 5, ingredients: 'dabcsdfs asdfsdf' },
-		{ name: 'snack5', cost: 6, ingredients: 'eabcsdfs asdfsdf' },
-		{ name: 'snack6', cost: 8, ingredients: 'fabcsdfs asdfsdf' },
+		{ name: 'snack1', cost: 4, ingredients: 'abcsdfs asdfsdf fsdffsd dsfg dfgdfg' },
+		{ name: 'snack2', cost: 4.5, ingredients: 'babcsdfs asdfsdf sfdgd' },
+		{ name: 'snack3', cost: 5, ingredients: 'cabcsdfs asdfsdf gdfg dfgdfg dfgds dsfg fdgsdf dfgd' },
+		{ name: 'snack4', cost: 5, ingredients: 'dabcsdfs asdfsdf fgd gdfg gdfgdf' },
+		{ name: 'snack5', cost: 6, ingredients: 'eabcsdfs asdfsdf dfgd gdfg dsgfgdf gdfgdfg' },
+		{ name: 'snack6', cost: 8, ingredients: 'fabcsdfs asdfsdf dfgdd' },
 	]
 
 	return (
 		<div className='menu__container'>
-			<div className='heading heading--lg heading__underline text-center'>Menu</div>
+			<div className='heading heading--lg heading__underline heading__red text-center'>Menu</div>
 			<div className='menu__header'>
 				{cards.map(card => {
 					return <MenuCard cardData={card} activeId={activeId} setActiveTab={setActiveTab} />
 				})}
 			</div>
-			<div className='menu__content'>
-				<div className='d-flex flex-wrap'>
+			<div className='menu__content wrapper'>
+				<div className='d-flex flex-wrap justify-evenly'>
 					{activeId === 0 &&
 						snacks.map(snack => {
 							return (
-								<div className='d-flex flex-column w-50 p-8'>
+								<div className='d-flex flex-column w-400px p-6'>
 									<div className='fw-bold d-flex justify-between'>
-										<span>{snack.name}</span>
-										<span>{snack.cost}$</span>
+										<span className='food__title'>{snack.name}</span>
+										<span className='food__cost'>{snack.cost}$</span>
 									</div>
-									<div>{snack.ingredients}</div>
+									<div className='d-flex flex-wrap food__description'>{snack.ingredients}</div>
 								</div>
 							)
 						})}

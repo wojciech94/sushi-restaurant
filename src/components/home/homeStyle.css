@@ -23,13 +23,6 @@ body:has(.gallery-full) {
 	padding: 2rem 0;
 }
 
-.wrapper {
-	width: 75%;
-	height: 100%;
-	max-width: 1400px;
-	margin: 0 auto;
-}
-
 .stats-wrapper {
 	width: 90%;
 	height: 100%;
@@ -83,6 +76,10 @@ body:has(.gallery-full) {
 
 .heading-right {
 	text-align: end;
+}
+
+.heading__red {
+	color: #b73737;
 }
 
 .heading--lg {
