@@ -53,6 +53,7 @@ body:has(.gallery-full) {
 
 .frame__image {
 	max-width: 400px;
+	max-height: 400px;
 }
 
 .heading {
@@ -252,15 +253,15 @@ body:has(.gallery-full) {
 	.stats__container {
 		grid-template-columns: 1fr 1fr;
 	}
-
-	.frame__container {
-		flex-direction: row;
-	}
 }
 
 @media (min-width: 992px) {
 	.stats::before {
 		transform: rotateZ(-1deg);
+	}
+
+	.frame__container {
+		flex-direction: row;
 	}
 }
 
