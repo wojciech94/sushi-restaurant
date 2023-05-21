@@ -21,9 +21,38 @@ function MenuSection() {
 	const [activeId, setActiveId] = useState(0)
 	const setActiveTab = id => {
 		setActiveId(id)
+		switch (id) {
+			case 0:
+				setActiveCategory(snacks)
+				break
+			case 1:
+				setActiveCategory(maki)
+				break
+			case 2:
+				setActiveCategory(futomaki)
+				break
+			case 3:
+				setActiveCategory(uramaki)
+				break
+			case 4:
+				setActiveCategory(nigiri)
+				break
+			case 5:
+				setActiveCategory(sets)
+				break
+			default:
+				setActiveCategory(snacks)
+				break
+		}
 	}
+	const [activeCategory, setActiveCategory] = useState({})
 	const [categories, setCategories] = useState([])
 	const [snacks, setSnacks] = useState([])
+	const [maki, setMaki] = useState([])
+	const [futomaki, setFutomaki] = useState([])
+	const [uramaki, setUramaki] = useState([])
+	const [nigiri, setNigiri] = useState([])
+	const [sets, setSets] = useState([])
 
 	useEffect(() => {
 		let c = []
@@ -33,21 +62,46 @@ function MenuSection() {
 		})
 		setCategories(c)
 		loadSnacks()
+		loadMaki()
+		loadFuto()
+		loadUra()
+		loadNigiri()
+		loadSets()
 	}, [])
+
+	useEffect(() => {
+		setActiveCategory(snacks)
+	}, [categories])
 
 	const loadSnacks = () => {
 		let snacks = menuData.find(sn => sn.category === 'Snacks')
 		setSnacks(snacks.items)
 	}
 
-	const snack1s = [
-		{ name: 'snack1', cost: 4, ingredients: 'abcsdfs asdfsdf fsdffsd dsfg dfgdfg' },
-		{ name: 'snack2', cost: 4.5, ingredients: 'babcsdfs asdfsdf sfdgd' },
-		{ name: 'snack3', cost: 5, ingredients: 'cabcsdfs asdfsdf gdfg dfgdfg dfgds dsfg fdgsdf dfgd' },
-		{ name: 'snack4', cost: 5, ingredients: 'dabcsdfs asdfsdf fgd gdfg gdfgdf' },
-		{ name: 'snack5', cost: 6, ingredients: 'eabcsdfs asdfsdf dfgd gdfg dsgfgdf gdfgdfg' },
-		{ name: 'snack6', cost: 8, ingredients: 'fabcsdfs asdfsdf dfgdd' },
-	]
+	const loadMaki = () => {
+		let mak = menuData.find(m => m.category === 'Maki')
+		setMaki(mak.items)
+	}
+
+	const loadFuto = () => {
+		let futo = menuData.find(f => f.category === 'Futomaki')
+		setFutomaki(futo.items)
+	}
+
+	const loadUra = () => {
+		let ura = menuData.find(u => u.category === 'Uramaki')
+		setUramaki(ura.items)
+	}
+
+	const loadNigiri = () => {
+		let nigiri = menuData.find(n => n.category === 'Nigiri')
+		setNigiri(nigiri.items)
+	}
+
+	const loadSets = () => {
+		let sets = menuData.find(s => s.category === 'Sets')
+		setSets(sets.items)
+	}
 
 	return (
 		<div className='menu__container'>
@@ -60,23 +114,56 @@ function MenuSection() {
 			</div>
 			<div className='menu__content wrapper'>
 				<div className='d-flex flex-wrap justify-evenly'>
-					{activeId === 0 &&
-						snacks.length &&
-						snacks.map(snack => {
-							console.log(snack)
-							return (
-								<div className='d-flex flex-column w-400px p-6'>
-									<div className='fw-bold d-flex justify-between'>
-										<span className='food__title'>{snack.name}</span>
-										<span className='food__cost'>{snack.cost}$</span>
-									</div>
-									<div className='d-flex flex-wrap food__description'>{snack.ingredients}</div>
-								</div>
-							)
-						})}
+					{activeId === 5 ? <Sets items={activeCategory}></Sets> : <SimpleRoll items={activeCategory}></SimpleRoll>}
 				</div>
 			</div>
 		</div>
+	)
+}
+
+function SimpleRoll({ items }) {
+	return (
+		<>
+			{items.length &&
+				items.map(item => {
+					return (
+						<div className='d-flex flex-column w-400px p-6'>
+							<div className='fw-bold d-flex justify-between'>
+								<span className='food__title'>{item.name}</span>
+								<span className='food__cost'>{item.cost}$</span>
+							</div>
+							<div className='d-flex flex-wrap food__description'>{item.ingredients}</div>
+						</div>
+					)
+				})}
+		</>
+	)
+}
+
+function Sets({ items }) {
+	return (
+		<>
+			{items.length &&
+				items.map(item => {
+					return (
+						<div className='d-flex flex-column w-400px p-6'>
+							<div className='fw-bold d-flex justify-between'>
+								<span className='food__title'>{item.name}</span>
+								<span className='food__cost'>{item.cost}$</span>
+							</div>
+							{item.items.map(ingred => {
+								return (
+									<div className='fw-bold d-flex justify-between'>
+										<span className='food__title'>{ingred.name}</span>
+										<span className='food__cost'>{ingred.count} pcs</span>
+										<div className='d-flex flex-wrap food__description'>{ingred.ingredients}</div>
+									</div>
+								)
+							})}
+						</div>
+					)
+				})}
+		</>
 	)
 }
 
