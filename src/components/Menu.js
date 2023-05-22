@@ -114,21 +114,28 @@ function MenuSection() {
 			</div>
 			<div className='menu__content wrapper'>
 				<div className='d-flex flex-wrap justify-evenly'>
-					{activeId === 5 ? <Sets items={activeCategory}></Sets> : <SimpleRoll items={activeCategory}></SimpleRoll>}
+					{activeId === 5 ? (
+						<Sets items={activeCategory} maxCols={4}></Sets>
+					) : (
+						<SimpleRoll items={activeCategory} maxCols={activeId === 4 ? 4 : 6}></SimpleRoll>
+					)}
 				</div>
 			</div>
 		</div>
 	)
 }
 
-function SimpleRoll({ items }) {
+function SimpleRoll({ items, maxCols }) {
 	return (
 		<>
 			{items.length &&
 				items.map(item => {
 					return (
-						<div className='d-flex flex-column w-400px p-6'>
-							<div className='fw-bold d-flex justify-between'>
+						<div
+							className={
+								maxCols === 4 ? 'd-flex flex-column w-100 w-md-50 p-4' : 'd-flex flex-column w-100 w-md-50 w-xxl-30 p-4'
+							}>
+							<div className='fw-bold d-flex justify-between g-2'>
 								<span className='food__title'>{item.name}</span>
 								<span className='food__cost'>{item.cost}$</span>
 							</div>
@@ -140,24 +147,26 @@ function SimpleRoll({ items }) {
 	)
 }
 
-function Sets({ items }) {
+function Sets({ items, maxCols }) {
 	return (
 		<>
 			{items.length &&
 				items.map(item => {
 					return (
-						<div className='d-flex flex-column w-400px p-6'>
+						<div className={maxCols === 4 ? 'd-flex flex-column w-100 w-md-50 p-6' : 'd-flex flex-column w-400px p-6'}>
 							<div className='fw-bold d-flex justify-between'>
-								<span className='food__title'>{item.name}</span>
-								<span className='food__cost'>{item.cost}$</span>
+								<div className='food__title'>{item.name}</div>
+								<div className='food__cost'>{item.cost}$</div>
 							</div>
 							{item.items.map(ingred => {
 								return (
-									<div className='fw-bold d-flex justify-between'>
-										<span className='food__title'>{ingred.name}</span>
-										<span className='food__cost'>{ingred.count} pcs</span>
-										<div className='d-flex flex-wrap food__description'>{ingred.ingredients}</div>
-									</div>
+									<>
+										<div className='fw-bold d-flex align-items-center justify-between'>
+											<div className='food__subtitle'>{ingred.name}</div>
+											<div className='food__subtitle'>{ingred.count} pcs</div>
+										</div>
+										<div className='d-flex flex-wrap food__description mb-4'>{ingred.ingredients}</div>
+									</>
 								)
 							})}
 						</div>
