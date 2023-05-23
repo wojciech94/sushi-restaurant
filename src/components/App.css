@@ -5,7 +5,7 @@
 }
 
 :root {
-	--nav-height: 100px;
+	--nav-height: 60px;
 	--wrapper-width: 1400px;
 }
 
@@ -70,9 +70,15 @@ body {
 	z-index: 20;
 }
 
+.nav__group {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
 .nav__link {
 	padding: 4px 8px;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: bold;
 	color: #e7a8a8;
 	list-style: none;
@@ -102,8 +108,8 @@ body {
 	background-position: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 152px;
-	height: 152px;
+	width: 100px;
+	height: 100px;
 }
 
 .nav__logo:hover {
@@ -171,7 +177,7 @@ body {
 	position: absolute;
 	margin: 0;
 	top: 33%;
-	font-size: 4rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-align: center;
 	color: #ccc;
@@ -190,17 +196,19 @@ body {
 
 .call-to-action-wrapper {
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	left: 50%;
 	translate: -50%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
 	color: #ccc;
+	white-space: nowrap;
 }
 
 .call-to-action-paragraph {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 }
 
@@ -210,7 +218,7 @@ body {
 	border: none;
 	transition: background-color 0.3s, color 0.3s;
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .call-to-action-btn:hover {
@@ -512,6 +520,22 @@ body {
 }
 
 @media (min-width: 576px) {
+	.hero-text {
+		font-size: 2rem;
+	}
+
+	.call-to-action-wrapper {
+		flex-direction: row;
+	}
+
+	.call-to-action-paragraph {
+		font-size: 1.6rem;
+	}
+
+	.call-to-action-btn {
+		font-size: 1.8rem;
+	}
+
 	.menu__title {
 		font-size: 1.2rem;
 	}
@@ -525,16 +549,21 @@ body {
 		padding: 0;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
 		width: 100%;
 		height: var(--nav-height);
 		transition: none;
 	}
 
+	.nav__group {
+		flex-direction: row;
+		gap: 8px;
+	}
+
 	.nav__link {
 		padding: 6px 12px;
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 
 	.nav__logo {
@@ -557,6 +586,23 @@ body {
 
 	.menu__title {
 		font-size: 1.3rem;
+	}
+
+	.hero-text {
+		top: 30%;
+		font-size: 2.4rem;
+	}
+
+	.call-to-action-wrapper {
+		top: 55%;
+	}
+
+	.call-to-action-paragraph {
+		font-size: 2rem;
+	}
+
+	.call-to-action-btn {
+		font-size: 2.2rem;
 	}
 
 	.food__title {
@@ -586,6 +632,18 @@ body {
 		font-size: 1.6rem;
 	}
 
+	.hero-text {
+		font-size: 2.7rem;
+	}
+
+	.call-to-action-paragraph {
+		font-size: 2.2rem;
+	}
+
+	.call-to-action-btn {
+		font-size: 2.5rem;
+	}
+
 	.food__title {
 		color: #cf1d1d;
 		font-size: 1.4rem;
@@ -611,6 +669,18 @@ body {
 @media (min-width: 1200px) {
 	.menu__title {
 		font-size: 1.8rem;
+	}
+
+	.hero-text {
+		font-size: 3rem;
+	}
+
+	.call-to-action-paragraph {
+		font-size: 2.5rem;
+	}
+
+	.call-to-action-btn {
+		font-size: 2.8rem;
 	}
 
 	.food__title {

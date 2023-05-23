@@ -310,5 +310,46 @@
 				]
 			}
 		]
+	},
+	{
+		"category": "Drinks",
+		"items": [
+			{
+				"id": 0,
+				"name": "Green tea",
+				"cost": 2.99,
+				"ingredients": "green tea, water"
+			},
+			{
+				"id": 1,
+				"name": "Yasmine tea",
+				"cost": 3.49,
+				"ingredients": "yasmine tea, water"
+			},
+			{
+				"id": 2,
+				"name": "Rice tea",
+				"cost": 3.49,
+				"ingredients": "rice tea, water"
+			},
+			{
+				"id": 3,
+				"name": "Prosecco",
+				"cost": 8.99,
+				"ingredients": "Prosecco"
+			},
+			{
+				"id": 4,
+				"name": "Sake",
+				"cost": 6.99,
+				"ingredients": "Sake"
+			},
+			{
+				"id": 5,
+				"name": "Choya",
+				"cost": 7.99,
+				"ingredients": "Choya"
+			}
+		]
 	}
 ]

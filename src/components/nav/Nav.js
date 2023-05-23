@@ -15,10 +15,12 @@ function Nav() {
 			<ul className={visible}>
 				<button className='nav__burger' onClick={toggleNav}></button>
 				<NavLogo></NavLogo>
-				<NavLink name='Home' navUrl='' toggler={toggleNav}></NavLink>
-				<NavLink name='Menu' navUrl='menu' toggler={toggleNav}></NavLink>
-				<NavLink name='Events' navUrl='events' toggler={toggleNav}></NavLink>
-				<NavLink name='Contact' navUrl='contact' toggler={toggleNav}></NavLink>
+				<div className='nav__group'>
+					<NavLink name='Home' navUrl='' toggler={toggleNav}></NavLink>
+					<NavLink name='Menu' navUrl='menu' toggler={toggleNav}></NavLink>
+					<NavLink name='Events' navUrl='events' toggler={toggleNav}></NavLink>
+					<NavLink name='Contact' navUrl='contact' toggler={toggleNav}></NavLink>
+				</div>
 			</ul>
 		</div>
 	)

@@ -40,6 +40,9 @@ function MenuSection() {
 			case 5:
 				setActiveCategory(sets)
 				break
+			case 6:
+				setActiveCategory(drinks)
+				break
 			default:
 				setActiveCategory(snacks)
 				break
@@ -53,6 +56,7 @@ function MenuSection() {
 	const [uramaki, setUramaki] = useState([])
 	const [nigiri, setNigiri] = useState([])
 	const [sets, setSets] = useState([])
+	const [drinks, setDrinks] = useState([])
 
 	useEffect(() => {
 		let c = []
@@ -67,6 +71,7 @@ function MenuSection() {
 		loadUra()
 		loadNigiri()
 		loadSets()
+		loadDrinks()
 	}, [])
 
 	useEffect(() => {
@@ -101,6 +106,11 @@ function MenuSection() {
 	const loadSets = () => {
 		let sets = menuData.find(s => s.category === 'Sets')
 		setSets(sets.items)
+	}
+
+	const loadDrinks = () => {
+		let drinks = menuData.find(d => d.category === 'Drinks')
+		setDrinks(drinks.items)
 	}
 
 	return (
