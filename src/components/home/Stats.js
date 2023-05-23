@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import '../home/homeStyle.css'
 
 function Stats({ scrollTop }) {
 	const [statsItem, setStatsItem] = useState(0)
@@ -20,11 +19,9 @@ function Stats({ scrollTop }) {
 			},
 		})
 			.then(function (response) {
-				console.log(response)
 				return response.json()
 			})
 			.then(function (myData) {
-				console.log(myData)
 				setStatsData(myData)
 			})
 	}
@@ -67,23 +64,26 @@ function Stats({ scrollTop }) {
 	}
 
 	return (
-		<div className='stats'>
-			<div className='wrapper stats-container'>
-				<div className='stats-item'>
-					<span className='stats-value'>{yearsVal}</span>
-					<span className='stats-text'>Lat na rynku</span>
-				</div>
-				<div className='stats-item'>
-					<span className='stats-value'>{scoreVal}</span>
-					<span className='stats-text'>Ocena na google</span>
-				</div>
-				<div className='stats-item'>
-					<span className='stats-value'>{ordersVal}</span>
-					<span className='stats-text'>Dostaw</span>
-				</div>
-				<div className='stats-item'>
-					<span className='stats-value'>{clientsVal}</span>
-					<span className='stats-text'>Klientów w restauracji</span>
+		<div id='stats' className='stats'>
+			<div className='stats__wrapper'>
+				<div className='stats__heading'>Stats</div>
+				<div className='stats__container'>
+					<div className='stats__item'>
+						<span className='stats__value'>{yearsVal}</span>
+						<span className='stats__text'>Years of experience</span>
+					</div>
+					<div className='stats__item'>
+						<span className='stats__value'>{scoreVal}</span>
+						<span className='stats__text'>Score on google</span>
+					</div>
+					<div className='stats__item'>
+						<span className='stats__value'>{ordersVal}</span>
+						<span className='stats__text'>Deliveries</span>
+					</div>
+					<div className='stats__item'>
+						<span className='stats__value'>{clientsVal}</span>
+						<span className='stats__text'>Clients in restaurant</span>
+					</div>
 				</div>
 			</div>
 		</div>

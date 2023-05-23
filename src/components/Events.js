@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './Hero'
 
-function Reservation() {
+function Events() {
 	const heroData = {
 		shadow: true,
 		name: 'sushirestaurant_desktop',
@@ -15,4 +15,4 @@ function Reservation() {
 	)
 }
 
-export default Reservation
+export default Events

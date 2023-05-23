@@ -1,0 +1,314 @@
+[
+	{
+		"category": "Snacks",
+		"items": [
+			{
+				"id": 0,
+				"name": "Chocolate-covered Pretzels",
+				"cost": 3.99,
+				"ingredients": "pretzels, milk chocolate, white chocolate, sea salt"
+			},
+
+			{
+				"id": 1,
+				"name": "Trail Mix",
+				"cost": 2.49,
+				"ingredients": "roasted peanuts, dried cranberries, raisins, almonds"
+			},
+
+			{
+				"id": 2,
+				"name": "Popcorn",
+				"cost": 1.99,
+				"ingredients": "popcorn, kernelsbuttersalt"
+			},
+
+			{
+				"id": 3,
+				"name": "Guacamole and Chips",
+				"cost": 5.99,
+				"ingredients": "avocado, lime, juice, red onion, tomato jalapeño, tortilla chips"
+			},
+
+			{
+				"id": 4,
+				"name": "Hummus and Pita",
+				"cost": 4.99,
+				"ingredients": "chickpeas tahini, lemon, juice, garlic, pita bread"
+			},
+
+			{
+				"id": 5,
+				"name": "Cheese and Crackers",
+				"cost": 3.49,
+				"ingredients": "cheddar, cheesecrackers"
+			}
+		]
+	},
+	{
+		"category": "Maki",
+		"items": [
+			{
+				"id": 0,
+				"name": "Cucumber Roll",
+				"cost": 4.99,
+				"ingredients": "sushi rice, nori seaweed, cucumber"
+			},
+
+			{
+				"id": 1,
+				"name": "Salmon Roll",
+				"cost": 6.99,
+				"ingredients": "sushi rice, nori seaweed, salmon"
+			},
+
+			{
+				"id": 2,
+				"name": "Tuna Roll",
+				"cost": 6.99,
+				"ingredients": "sushi rice, nori seaweed, tuna"
+			},
+
+			{
+				"id": 3,
+				"name": "Avocado Roll",
+				"cost": 5.99,
+				"ingredients": "sushi rice, nori seaweed, avocado"
+			},
+
+			{
+				"id": 4,
+				"name": "California Roll",
+				"cost": 7.99,
+				"ingredients": "sushi rice, nori seaweed, imitation crab, avocado"
+			},
+
+			{
+				"id": 5,
+				"name": "Shrimp Roll",
+				"cost": 7.99,
+				"ingredients": "sushi rice, nori, seaweedshrimp"
+			}
+		]
+	},
+	{
+		"category": "Futomaki",
+		"items": [
+			{
+				"id": 0,
+				"name": "California Roll",
+				"cost": 7.99,
+				"ingredients": "sushi rice, nori seaweed, imitation crab, avocado, cucumber"
+			},
+
+			{
+				"id": 1,
+				"name": "Spicy Tuna Roll",
+				"cost": 9.99,
+				"ingredients": "sushi rice, nori seaweed, tuna, spicy mayo, scallions"
+			},
+
+			{
+				"id": 2,
+				"name": "Philadelphia Roll",
+				"cost": 8.99,
+				"ingredients": "sushi rice, nori seaweed, smoked salmon, cream cheese, cucumber"
+			},
+
+			{
+				"id": 3,
+				"name": "Rainbow Roll",
+				"cost": 12.99,
+				"ingredients": "sushi rice, nori seaweed,tuna, salmon yellowtail, avocado, cucumber"
+			},
+
+			{
+				"id": 4,
+				"name": "Spider Roll",
+				"cost": 11.99,
+				"ingredients": "sushi rice, nori seaweed, soft shell crab, avocado, cucumber, spicy mayo"
+			},
+
+			{
+				"id": 5,
+				"name": "Vegetable Roll",
+				"cost": 6.99,
+				"ingredients": "sushi rice, nori seaweed, avocado, cucumber, carrot, daikon"
+			}
+		]
+	},
+	{
+		"category": "Uramaki",
+		"items": [
+			{
+				"id": 0,
+				"name": "Dragon Roll",
+				"cost": 14.99,
+				"ingredients": "sushi rice, nori seaweed, shrimp, tempura, avocado, cucumber, eel"
+			},
+
+			{
+				"id": 1,
+				"name": "Spider Roll",
+				"cost": 12.99,
+				"ingredients": "sushi rice, nori seaweed, soft shell crab, avocado, cucumber, spicy mayo"
+			},
+
+			{
+				"id": 2,
+				"name": "Philadelphia Roll",
+				"cost": 9.99,
+				"ingredients": "sushi rice, nori seaweed, smoked salmon,cream cheese, cucumber"
+			},
+
+			{
+				"id": 3,
+				"name": "Rainbow Roll",
+				"cost": 12.99,
+				"ingredients": "sushi rice, nori seaweed, tuna, salmon yellowtail, avocado, cucumber"
+			},
+
+			{
+				"id": 4,
+				"name": "Caterpillar Roll",
+				"cost": 13.99,
+				"ingredients": "sushi rice, nori seaweed, eel, avocado, cucumber, eel sauce"
+			},
+
+			{
+				"id": 5,
+				"name": "Spicy Tuna Roll",
+				"cost": 9.99,
+				"ingredients": "sushi rice, nori seaweed, tuna, spicy mayo, scallions"
+			}
+		]
+	},
+	{
+		"category": "Nigiri",
+		"items": [
+			{
+				"id": 0,
+				"name": "Maguro (Tuna) Nigiri",
+				"cost": 3.99,
+				"ingredients": "sushi rice, maguro tuna"
+			},
+
+			{
+				"id": 1,
+				"name": "Sake (Salmon) Nigiri",
+				"cost": 3.49,
+				"ingredients": "sushi rice, sake salmon"
+			},
+
+			{
+				"id": 2,
+				"name": "Ebi (Shrimp) Nigiri",
+				"cost": 2.99,
+				"ingredients": "sushi rice, cooked ebi shrimp"
+			},
+
+			{
+				"id": 3,
+				"name": "Hamachi (Yellowtail) Nigiri",
+				"cost": 4.49,
+				"ingredients": "sushi rice, hamachi yellowtail"
+			}
+		]
+	},
+	{
+		"category": "Sets",
+		"items": [
+			{
+				"id": 0,
+				"name": "Vegetarian Delight",
+				"cost": 13.99,
+				"items": [
+					{
+						"name": "Avocado Maki",
+						"count": 6,
+						"ingredients": "sushi rice, nori seaweed, avocado"
+					},
+					{
+						"name": "Kappa Maki",
+						"count": 6,
+						"ingredients": "sushi rice, nori seaweed, cucumber"
+					},
+					{
+						"name": "Inari Sushi",
+						"count": 2,
+						"ingredients": "seasoned fried tofu pockets, sushi rice"
+					}
+				]
+			},
+
+			{
+				"id": 1,
+				"name": "Sashimi Lovers",
+				"cost": 19.99,
+				"items": [
+					{
+						"name": "Maguro (Tuna) Sashimi",
+						"count": 6,
+						"ingredients": "maguro tuna"
+					},
+					{
+						"name": "Sake (Salmon) Sashimi",
+						"count": 6,
+						"ingredients": "sake salmon"
+					},
+					{
+						"name": "Hamachi (Yellowtail) Nigiri",
+						"count": 6,
+						"ingredients": "sushi rice, hamachi yellowtail"
+					}
+				]
+			},
+
+			{
+				"id": 2,
+				"name": "Dragon Roll Set",
+				"cost": 22.99,
+				"items": [
+					{
+						"name": "Unagi (Eel) Nigiri",
+						"count": 2,
+						"ingredients": "sushi rice, unagi eel"
+					},
+					{
+						"name": "Avocado Maki",
+						"count": 6,
+						"ingredients": "sushi rice, nori seaweed, avocado"
+					},
+					{
+						"name": "Dragon Roll",
+						"count": 6,
+						"ingredients": "sushi rice, nori seaweed, unagi eel, avocado, tobiko, eel sauce"
+					}
+				]
+			},
+
+			{
+				"id": 3,
+				"name": "Nigiri Set",
+				"cost": 20.99,
+				"items": [
+					{
+						"name": "Unagi (Eel) Nigiri",
+						"count": 4,
+						"ingredients": "sushi rice, unagi eel"
+					},
+					{
+						"name": "Maguro (Tuna) Nigiri",
+						"count": 4,
+						"ingredients": "sushi rice, maguro tuna"
+					},
+					{
+						"name": "Hamachi (Yellowtail) Nigiri",
+						"count": 4,
+						"ingredients": "sushi rice, hamachi yellowtail"
+					}
+				]
+			}
+		]
+	}
+]
