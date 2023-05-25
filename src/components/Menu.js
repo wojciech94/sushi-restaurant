@@ -2,7 +2,7 @@ import Hero from './Hero'
 import Offers from '../special_offers.json'
 import MenuData from '../menu.json'
 import { CtxConsumer } from '..'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Fragment } from 'react'
 
 function MenuCard({ cardData, activeId, setActiveTab }) {
 	return (
@@ -118,8 +118,8 @@ function MenuSection() {
 			<div className='heading heading--lg heading__underline heading__red text-center'>Menu</div>
 			<div className='menu__header'>
 				{categories.length &&
-					categories.map(cat => {
-						return <MenuCard cardData={cat} activeId={activeId} setActiveTab={setActiveTab} />
+					categories.map((cat, id) => {
+						return <MenuCard key={id} cardData={cat} activeId={activeId} setActiveTab={setActiveTab} />
 					})}
 			</div>
 			<div className='menu__content wrapper'>
@@ -142,6 +142,7 @@ function SimpleRoll({ items, maxCols }) {
 				items.map(item => {
 					return (
 						<div
+							key={item.id}
 							className={
 								maxCols === 4 ? 'd-flex flex-column w-100 w-md-50 p-4' : 'd-flex flex-column w-100 w-md-50 w-xxl-30 p-4'
 							}>
@@ -163,20 +164,22 @@ function Sets({ items, maxCols }) {
 			{items.length &&
 				items.map(item => {
 					return (
-						<div className={maxCols === 4 ? 'd-flex flex-column w-100 w-md-50 p-6' : 'd-flex flex-column w-400px p-6'}>
+						<div
+							key={item.id}
+							className={maxCols === 4 ? 'd-flex flex-column w-100 w-md-50 p-6' : 'd-flex flex-column w-400px p-6'}>
 							<div className='fw-bold d-flex justify-between'>
 								<div className='food__title'>{item.name}</div>
 								<div className='food__cost'>{item.cost}$</div>
 							</div>
-							{item.items.map(ingred => {
+							{item.items.map((ingred, id) => {
 								return (
-									<>
+									<Fragment key={id}>
 										<div className='fw-bold d-flex align-items-center justify-between'>
 											<div className='food__subtitle'>{ingred.name}</div>
 											<div className='food__subtitle'>{ingred.count} pcs</div>
 										</div>
 										<div className='d-flex flex-wrap food__description mb-4'>{ingred.ingredients}</div>
-									</>
+									</Fragment>
 								)
 							})}
 						</div>

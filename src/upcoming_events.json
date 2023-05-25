@@ -1,0 +1,23 @@
+[
+	{
+		"title": "Live cooking with Alon Than",
+		"content": ["Lorem ipsum dolor amet", "asasdfa sdfsdfasd fgh tyegrg ergdf"],
+		"date": "13.06.2023",
+		"cost": "40$",
+		"learnMorePath": "/live"
+	},
+	{
+		"title": "Summer start celebration",
+		"content": ["Lorem ipsum dolor amet", "asasdfa sdfsdfasd fgh tyegrg ergdf"],
+		"date": "23.06.2023",
+		"cost": "30$",
+		"learnMorePath": "/summer"
+	},
+	{
+		"title": "Workshops with our chef",
+		"content": ["Lorem ipsum dolor amet", "asasdfa sdfsdfasd fgh tyegrg ergdf"],
+		"date": "16.07.2023",
+		"cost": "50$",
+		"learnMorePath": "/workshops"
+	}
+]

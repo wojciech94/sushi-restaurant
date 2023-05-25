@@ -13,18 +13,13 @@ function HeroShadow() {
 	return <div className='hero-shadow'></div>
 }
 
-const GoToMenu = {
-	text: 'Checkout our',
-	btnText: 'Menu',
-}
-
 function Hero({ hero }) {
 	return (
 		<div className='hero'>
 			<HeroImg name={hero.name} />
 			{hero.shadow === true && <HeroShadow />}
 			<HeroText text={hero.text} />
-			{hero.useAction === true && <CallToAction action={GoToMenu} />}
+			{hero.useAction === true && <CallToAction action={hero.actionData} />}
 		</div>
 	)
 }

@@ -21,11 +21,18 @@ function App({ scrollTop }) {
 		window.scrollTo(0, offset.current)
 	}, [fullMode])
 
+	const actionData = {
+		text: 'Checkout our',
+		btnText: 'Menu',
+		path: '/menu',
+	}
+
 	const heroData = {
 		shadow: true,
 		name: 'sushi_desktop',
 		text: 'Welcome to our restaurant!',
 		useAction: true,
+		actionData: actionData,
 	}
 
 	return (
