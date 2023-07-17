@@ -24,6 +24,10 @@ body {
 	background-color: #00000088;
 }
 
+.bg-concrete {
+	background-image: url('../../public/img/bg-concrete-lg.jpg');
+}
+
 .wrapper {
 	width: 80%;
 	height: 100%;
@@ -115,6 +119,14 @@ body {
 .nav__logo:hover {
 	cursor: pointer;
 	background-image: url('../../public/img/sushi-logo.png');
+}
+
+.workshops-image {
+	background-image: url('../../public/img/animated-workshops-bg.jpg');
+	background-size: cover;
+	background-position: 50% 75%;
+	width: 100%;
+	aspect-ratio: 2/1;
 }
 
 .back-to-top-btn {
