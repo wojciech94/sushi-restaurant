@@ -220,7 +220,7 @@ function Special() {
 		<>
 			<Hero hero={heroData} />
 			<div className='special__wrapper p-8'>
-				<div id='specials' className='heading heading--lg heading__underline text-center'>
+				<div id='specials' className='heading heading--lg heading__gray heading__underline text-center'>
 					Special Offers
 				</div>
 				<div id='specials' className='special__container'>

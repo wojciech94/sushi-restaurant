@@ -5,7 +5,7 @@ const AboutUs = () => {
 		<div id='about-us' className='about-us'>
 			<div className='wrapper'>
 				<div className='frame'>
-					<h1 className='heading heading--xl'>About us</h1>
+					<h1 className='heading heading--xl heading__gray'>About us</h1>
 					<p className='paragraph'>
 						It is a long established fact that a reader will be distracted by the readable content of a page when
 						looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -16,7 +16,7 @@ const AboutUs = () => {
 					</p>
 				</div>
 				<div className='frame frame--right'>
-					<h1 className='heading heading-right heading--xl'>Our story</h1>
+					<h1 className='heading heading-right heading--xl heading__gray'>Our story</h1>
 					<p className='paragraph'>
 						It is a long established fact that a reader will be distracted by the readable content of a page when
 						looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -27,7 +27,7 @@ const AboutUs = () => {
 					</p>
 				</div>
 				<div className='frame'>
-					<h1 className='heading heading--xl'>Team</h1>
+					<h1 className='heading heading--xl heading__gray'>Team</h1>
 					<div className='frame__container'>
 						<div className='frame__group'>
 							<img src='../img/stuff/cook-small.jpg' className='frame__image'></img>
@@ -106,7 +106,7 @@ const AboutUs = () => {
 								evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 							</p>
 						</div>
-						<div className='frame__group'>
+						<div className='frame__group order-1 order-lg-2'>
 							<img src='../img/stuff/waitress--small.jpg' className='frame__image'></img>
 						</div>
 					</div>

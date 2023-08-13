@@ -121,12 +121,70 @@ body {
 	background-image: url('../../public/img/sushi-logo.png');
 }
 
-.workshops-image {
-	background-image: url('../../public/img/animated-workshops-bg.jpg');
+.heading {
+	position: relative;
+	margin: 0.75rem 0;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ccc;
+}
+
+.heading__underline::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -4px;
+	translate: -50% 0;
+	width: 50px;
+	height: 2px;
+	background-color: #b73737;
+}
+
+.heading-right {
+	text-align: end;
+}
+
+.heading__red {
+	color: #b73737;
+}
+
+.heading__gray {
+	color: #3e3e3e;
+}
+
+.heading--md {
+	position: relative;
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.heading--lg {
+	margin: 1rem 0;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.heading--xl {
+	margin: 1.25rem 0;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.bg-image {
+	background-image: url('../../public/img/sushi.jpg');
 	background-size: cover;
 	background-position: 50% 75%;
 	width: 100%;
-	aspect-ratio: 2/1;
+	aspect-ratio: 1/1;
+}
+
+.workshops-image {
+	background-image: url('../../public/img/animated-workshops-bg.jpg');
+}
+
+.sushihome-image {
+	background-image: url('../../public/img/sushihome_desktop.jpg');
 }
 
 .back-to-top-btn {
@@ -368,6 +426,30 @@ body {
 	right: 10px;
 }
 
+.events-button {
+	position: absolute;
+	padding: 0.5rem;
+	top: 20px;
+	left: 50%;
+	font-size: 1rem;
+	font-weight: bold;
+	border: 2px solid #b32a2a;
+	border-radius: 8px;
+	transition: color 0.25s, background-color 0.25s;
+	cursor: pointer;
+	translate: -50% 0;
+	animation: bounce 2s 0s linear infinite;
+}
+
+.events-button:hover {
+	animation: none;
+}
+
+.events-button:hover {
+	color: #fefefe;
+	background-color: #b32a2a;
+}
+
 .carousel-title {
 	position: relative;
 	font-size: 2rem;
@@ -531,6 +613,28 @@ body {
 	background-color: #ccc;
 }
 
+@keyframes bounce {
+	50% {
+		top: 20px;
+	}
+
+	60% {
+		top: 0px;
+	}
+
+	70% {
+		top: 20px;
+	}
+
+	80% {
+		top: 10px;
+	}
+
+	90% {
+		top: 20px;
+	}
+}
+
 @media (min-width: 576px) {
 	.hero-text {
 		font-size: 2rem;
@@ -617,6 +721,10 @@ body {
 		font-size: 2.2rem;
 	}
 
+	.bg-image {
+		aspect-ratio: 3/2;
+	}
+
 	.food__title {
 		color: #cf1d1d;
 		font-size: 1.25rem;
@@ -654,6 +762,10 @@ body {
 
 	.call-to-action-btn {
 		font-size: 2.5rem;
+	}
+
+	.bg-image {
+		aspect-ratio: 2/1;
 	}
 
 	.food__title {
