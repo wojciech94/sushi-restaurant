@@ -56,45 +56,6 @@ body:has(.gallery-full) {
 	max-height: 400px;
 }
 
-.heading {
-	position: relative;
-	margin: 0.75rem 0;
-	font-size: 1rem;
-	font-weight: bold;
-	color: #4e4e4e;
-}
-
-.heading__underline::after {
-	content: '';
-	position: absolute;
-	left: 50%;
-	bottom: -4px;
-	translate: -50% 0;
-	width: 50px;
-	height: 2px;
-	background-color: #b73737;
-}
-
-.heading-right {
-	text-align: end;
-}
-
-.heading__red {
-	color: #b73737;
-}
-
-.heading--lg {
-	margin: 1rem 0;
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.heading--xl {
-	margin: 1.25rem 0;
-	font-size: 3rem;
-	font-weight: bold;
-}
-
 .stats {
 	position: relative;
 	width: 100%;

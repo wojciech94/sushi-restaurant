@@ -30,7 +30,7 @@ function Footer() {
 			<div className='d-flex flex-wrap'>
 				<div className='col-12 col-md-6 col-xl-4 p-4'>
 					<div className='mb-6 mt-3'>
-						<span className='heading heading__underline'>Contact</span>
+						<span className='heading heading__underline heading__gray'>Contact</span>
 					</div>
 					<div className='d-flex align-items-center g-2 mb-2'>
 						<MapPin />
@@ -47,14 +47,14 @@ function Footer() {
 				</div>
 				<div className='col-12 col-md-6 col-xl-4 p-4'>
 					<div className='mb-6 mt-3'>
-						<span className='heading heading__underline'>Opening Hours</span>
+						<span className='heading heading__underline heading__gray'>Opening Hours</span>
 					</div>
 					<div className='mb-2'>Monday - Friday : 8AM - 10PM</div>
 					<div className='mb-2'>Saturday : 8AM - 11PM</div>
 					<div className='mb-2'>Sunday : 10AM - 9PM</div>
 				</div>
 				<div className='col-12 col-xl-4 p-4'>
-					<div className='heading heading__underline text-center'>Shortcuts</div>
+					<div className='heading heading__underline heading__gray text-center'>Shortcuts</div>
 					<div className='d-flex flex-wrap justify-evenly g-2 m-4'>
 						{shorts.map(short => {
 							return (
