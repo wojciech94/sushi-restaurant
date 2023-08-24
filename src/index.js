@@ -43,6 +43,7 @@ function Routing() {
 						<Route path='/events' element={<Events />} />
 						<Route path='/contact' element={<Contact />} />
 					</Routes>
+
 					<BackToTopBtn handleClick={() => handleBackTop()} scrollHeight={scrlHeight}></BackToTopBtn>
 					<Footer />
 				</CtxProvider>

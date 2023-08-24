@@ -59,6 +59,7 @@ function MenuSection() {
 	const [drinks, setDrinks] = useState([])
 
 	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: 'auto' })
 		let c = []
 		menuData.map((cat, i) => {
 			c.push({ category: cat.category, id: i })
