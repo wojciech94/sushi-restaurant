@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './Hero'
 import LiveCooking from './LiveCooking'
 import SpecialEvents from './SpecialEvents'
@@ -6,6 +6,10 @@ import UpcomingEvents from './UpcomingEvents'
 import Workshops from './Workshops'
 
 function Events() {
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	const onClickAction = () => {
 		let target = document.querySelector(`#${actionData.path}`)
 		if (target) {
@@ -32,10 +36,10 @@ function Events() {
 	return (
 		<>
 			<Hero hero={heroData} />
-			<UpcomingEvents></UpcomingEvents>
 			<Workshops id={actionData.path}></Workshops>
 			<LiveCooking></LiveCooking>
 			<SpecialEvents></SpecialEvents>
+			<UpcomingEvents></UpcomingEvents>
 		</>
 	)
 }

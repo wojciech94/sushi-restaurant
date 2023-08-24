@@ -5,7 +5,7 @@ function Footer() {
 	const shorts = [
 		{
 			name: 'Home',
-			path: '#',
+			path: '/home',
 		},
 		{
 			name: 'Menu',
@@ -42,7 +42,7 @@ function Footer() {
 					</div>
 					<div className='d-flex align-items-center g-2 mb-2'>
 						<Mail />
-						<span>sushihome@ethermail.io</span>
+						<span>sushihome@xyz.io</span>
 					</div>
 				</div>
 				<div className='col-12 col-md-6 col-xl-4 p-4'>
