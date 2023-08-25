@@ -12,7 +12,7 @@ function Stats({ scrollTop }) {
 	let refCounter = useRef()
 
 	const getData = () => {
-		fetch('./stats.json', {
+		fetch('/stats.json', {
 			headers: {
 				'Content-Type': 'application/json',
 				Accept: 'application/json',
@@ -23,6 +23,9 @@ function Stats({ scrollTop }) {
 			})
 			.then(function (myData) {
 				setStatsData(myData)
+			})
+			.catch(function (error) {
+				console.error('Fetch error:', error) // Obsłuż błąd
 			})
 	}
 
@@ -37,30 +40,42 @@ function Stats({ scrollTop }) {
 	}, [scrollTop])
 
 	useEffect(() => {
-		refCounter.current = counterVal
-		const y = Math.round((refCounter.current / 100) * statsData.map(stats => stats.years))
-		const s = Math.round(((refCounter.current * 10) / 100) * statsData.map(stats => stats.score)) / 10
-		const o = Math.round((refCounter.current / 100) * statsData.map(stats => stats.orders))
-		const c = Math.round((refCounter.current / 100) * statsData.map(stats => stats.clients))
-		setYearsVal(y)
-		setScoreVal(s)
-		setOrdersVal(o)
-		setClientsVal(c)
+		try {
+			refCounter.current = counterVal
+			const y = Math.round((refCounter.current / 100) * statsData.map(stats => stats.years))
+			const s = Math.round(((refCounter.current * 10) / 100) * statsData.map(stats => stats.score)) / 10
+			const o = Math.round((refCounter.current / 100) * statsData.map(stats => stats.orders))
+			const c = Math.round((refCounter.current / 100) * statsData.map(stats => stats.clients))
+			setYearsVal(y)
+			setScoreVal(s)
+			setOrdersVal(o)
+			setClientsVal(c)
+		} catch (error) {
+			console.error('Error updating state:' + error)
+		}
 	}, [counterVal])
-
-	const counterFunction = () => {
-		setCounterVal(counterVal => counterVal + 1)
-	}
 
 	const calcStats = async () => {
 		setCalcLock(true)
-		const interval20 = setInterval(counterFunction, 20)
-		const result = await new Promise(function (resolve, reject) {
-			setTimeout(function () {
-				clearInterval(interval20)
-				resolve('resolved')
-			}, 2000)
-		})
+		const startTime = Date.now()
+		const duration = 2000 // Czas trwania w ms
+		const interval = 20 // Interwał inkrementacji w ms
+
+		const animateCounter = () => {
+			const currentTime = Date.now()
+			const elapsedTime = currentTime - startTime
+
+			if (elapsedTime < duration) {
+				const progress = elapsedTime / duration
+				const nextValue = Math.min(Math.floor(progress * 100), 100)
+				setCounterVal(nextValue)
+				requestAnimationFrame(animateCounter)
+			} else {
+				setCounterVal(100)
+			}
+		}
+
+		animateCounter()
 	}
 
 	return (

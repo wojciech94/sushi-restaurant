@@ -38,7 +38,7 @@ function Routing() {
 					<Nav />
 					<Routes>
 						<Route path='/' element={<App scrollTop={scrlHeight} />} />
-						<Route path='/home' element={<App />} />
+						<Route path='/home' element={<App scrollTop={scrlHeight} />} />
 						<Route path='/menu' element={<Special />} />
 						<Route path='/events' element={<Events />} />
 						<Route path='/contact' element={<Contact />} />
