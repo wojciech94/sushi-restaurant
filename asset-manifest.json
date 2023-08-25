@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sushi-restaurant/static/css/main.a241f163.css",
-    "main.js": "/sushi-restaurant/static/js/main.16038fef.js",
+    "main.js": "/sushi-restaurant/static/js/main.4640dfa9.js",
     "static/media/bg-concrete-lg.jpg": "/sushi-restaurant/static/media/bg-concrete-lg.c29d32d428880ed78d7a.jpg",
     "static/media/animated-workshops-bg.jpg": "/sushi-restaurant/static/media/animated-workshops-bg.e1117da007d2448b72e7.jpg",
     "static/media/sushi-logo.png": "/sushi-restaurant/static/media/sushi-logo.1ef8e383aaf6ee41abee.png",
@@ -13,10 +13,10 @@
     "index.html": "/sushi-restaurant/index.html",
     "static/media/arrow-up.svg": "/sushi-restaurant/static/media/arrow-up.70d8ca827d1640720ed8.svg",
     "main.a241f163.css.map": "/sushi-restaurant/static/css/main.a241f163.css.map",
-    "main.16038fef.js.map": "/sushi-restaurant/static/js/main.16038fef.js.map"
+    "main.4640dfa9.js.map": "/sushi-restaurant/static/js/main.4640dfa9.js.map"
   },
   "entrypoints": [
     "static/css/main.a241f163.css",
-    "static/js/main.16038fef.js"
+    "static/js/main.4640dfa9.js"
   ]
 }
