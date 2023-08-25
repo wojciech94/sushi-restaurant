@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sushi-restaurant/static/css/main.a241f163.css",
+    "main.js": "/sushi-restaurant/static/js/main.16038fef.js",
+    "static/media/bg-concrete-lg.jpg": "/sushi-restaurant/static/media/bg-concrete-lg.c29d32d428880ed78d7a.jpg",
+    "static/media/animated-workshops-bg.jpg": "/sushi-restaurant/static/media/animated-workshops-bg.e1117da007d2448b72e7.jpg",
+    "static/media/sushi-logo.png": "/sushi-restaurant/static/media/sushi-logo.1ef8e383aaf6ee41abee.png",
+    "static/media/sushihome_desktop.jpg": "/sushi-restaurant/static/media/sushihome_desktop.02509af1d32f868f74ae.jpg",
+    "static/media/sushi-logo-off.png": "/sushi-restaurant/static/media/sushi-logo-off.dab407898ce89574da1d.png",
+    "static/media/sushi.jpg": "/sushi-restaurant/static/media/sushi.8fd12e0bb63894a4a29d.jpg",
+    "static/media/star.svg": "/sushi-restaurant/static/media/star.4c88ca7127de171f6c93.svg",
+    "static/media/star-empty.svg": "/sushi-restaurant/static/media/star-empty.f53ced510d8fbe244d3c.svg",
+    "index.html": "/sushi-restaurant/index.html",
+    "static/media/arrow-up.svg": "/sushi-restaurant/static/media/arrow-up.70d8ca827d1640720ed8.svg",
+    "main.a241f163.css.map": "/sushi-restaurant/static/css/main.a241f163.css.map",
+    "main.16038fef.js.map": "/sushi-restaurant/static/js/main.16038fef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a241f163.css",
+    "static/js/main.16038fef.js"
+  ]
+}
