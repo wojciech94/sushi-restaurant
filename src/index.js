@@ -32,7 +32,7 @@ function Routing() {
 	}
 
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<React.StrictMode>
 				<CtxProvider value={{ day: day }}>
 					<Nav />
