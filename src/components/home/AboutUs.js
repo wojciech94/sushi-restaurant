@@ -30,7 +30,7 @@ const AboutUs = () => {
 					<h1 className='heading heading--xl heading__gray'>Team</h1>
 					<div className='frame__container'>
 						<div className='frame__group'>
-							<img src='../img/stuff/cook-small.jpg' className='frame__image'></img>
+							<img src='/sushi-restaurant/img/stuff/cook-small.jpg' className='frame__image'></img>
 						</div>
 						<div className='frame__group min-w-300p'>
 							<div className='d-flex align-center g-2'>
@@ -65,14 +65,14 @@ const AboutUs = () => {
 							</p>
 						</div>
 						<div className='frame__group order-1 order-lg-2'>
-							<img src='../img/stuff/chefs-small.jpg' className='frame__image'></img>
+							<img src='/sushihome-restaurant/img/stuff/chefs-small.jpg' className='frame__image'></img>
 						</div>
 					</div>
 				</div>
 				<div className='frame'>
 					<div className='frame__container'>
 						<div className='frame__group'>
-							<img src='../img/stuff/cooking-small.jpg' className='frame__image'></img>
+							<img src='/sushihome-restaurant/img/stuff/cooking-small.jpg' className='frame__image'></img>
 						</div>
 						<div className='frame__group min-w-300p'>
 							<div className='d-flex align-center g-2'>
@@ -107,7 +107,7 @@ const AboutUs = () => {
 							</p>
 						</div>
 						<div className='frame__group order-1 order-lg-2'>
-							<img src='../img/stuff/waitress--small.jpg' className='frame__image'></img>
+							<img src='/sushihome-restaurant/img/stuff/waitress--small.jpg' className='frame__image'></img>
 						</div>
 					</div>
 				</div>
