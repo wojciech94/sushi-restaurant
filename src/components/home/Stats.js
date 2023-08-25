@@ -12,7 +12,7 @@ function Stats({ scrollTop }) {
 	let refCounter = useRef()
 
 	const getData = () => {
-		fetch('${process.env.PUBLIC_URL}/stats.json', {
+		fetch(`${process.env.PUBLIC_URL}/stats.json`, {
 			headers: {
 				'Content-Type': 'application/json',
 				Accept: 'application/json',
